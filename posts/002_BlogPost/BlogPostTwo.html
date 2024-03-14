@@ -2,14 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ebunoluwa Akadiri">
 <meta name="dcterms.date" content="2024-02-27">
+<meta name="description" content="Analyzing the usage of AI to impersonate musicians.">
 
-<title>Favour’s Explorations with LLMs - Blog Post 2 :</title>
+<title>Favour’s Explorations with LLMs - Blog Post 2 : Deepfakes in the Music Industry — How Much is Too Much?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,9 +106,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Blog Post 2 :</h1>
-                                <div class="quarto-categories">
+      <h1 class="title">Blog Post 2 : Deepfakes in the Music Industry — How Much is Too Much?</h1>
+                  <div>
+        <div class="description">
+          Analyzing the usage of AI to impersonate musicians.
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">AI</div>
+                <div class="quarto-category">Music</div>
+                <div class="quarto-category">Deepfakes</div>
               </div>
                   </div>
   </div>
@@ -144,8 +152,38 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="deepfakes-in-the-music-industry-how-much-is-too-much" class="level1">
+<h1>Deepfakes in the Music Industry — How Much is Too Much?</h1>
+<p>Many of us are familiar with celebrity impersonators, people who make livings off their uncanny resemblances to celebrities. A good example of this is Izzy otherwise known as “fake Drake” who built a large following and made up to 5,000 for each event he appears at pretending to be Drake:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="BlogPostTwo_files/figure-html/26370952-024a-4e0f-9a5c-2680b484e523-1-865d410d-a3fa-4d60-8038-8a71a5fc9d5c.jpeg" class="img-fluid figure-img"></p>
+<figcaption>fakedrake.jpeg</figcaption>
+</figure>
+</div>
+<p>However, AI has led to a new sort of technology, one that can be used to mimic the voices of certain celebrities, namely singers and rappers, on various songs.</p>
+<p>An example of this is Musicfy’s Free Celebrity AI Voice Generator <a href="https://musicfy.lol/blog/musicfys-free-celebrity-ai-voice-generator">Link</a>.</p>
+<p>This generator claims to have access to the voices of over 3,000 celebrities from Donald Trump to Ariana Grande. The site claims that the ability to listen to any celebrity at any time creates the feeling of a personalized concerts.</p>
+<p>Here are some examples of some famous celebrities performing songs that are not their own:</p>
+<ol type="1">
+<li>If Linkin’ Park Made the Pokemon Theme Song</li>
+</ol>
+<p><a href="https://youtu.be/CuCUdQ3xrEk?si=peYjSiGClDDK7Xx">Link</a></p>
+<ol start="2" type="1">
+<li>Rihanna Singing Wonderwall by Oasis</li>
+</ol>
+<p><a href="https://www.youtube.com/watch?v=K9wUPeIaIzo">Link</a></p>
+<ol start="3" type="1">
+<li>Rihanna Singing Fast Car by Tracy Chapman</li>
+</ol>
+<p><a href="https://www.youtube.com/watch?v=9q_lJ8c7ZUo">Link</a></p>
+<p>What’s particularly interesting about this cover is it is distinctively out of key. As a musician, I can discern that she starts off in the correct key but each line after is in a different/wrong key. This makes it a bit easier to identify it as AI.</p>
+<p>Aside from the declination in quality, it is also important to consider the ethical dilemma that comes with attaching someone’s voice to something they didn’t say, or in this case sing.</p>
+<p>We’ve seen with political deepfakes how dangerous it can be to create videos of politicians saying or doing things they did not say or do in real life. It leads to an overall decline in quality of political information available and general mistrust of the government. In the case of music, not many labels and agencies have protected rights over their Artificial likeness which is what is allowing these websites to take the voices of celebrities and put them in different songs and contexts.</p>
+<p>It is important that artists protect their rights, but it is also important to recognize that we as consumers, shoukd try to consume ethical art, not art made artificially.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -227,6 +265,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/eakadiri\.github\.io\/comm4190_S24_Using_LLMs_Blog\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -261,7 +317,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
